@@ -1,1 +1,502 @@
 
+<!DOCTYPE html>
+<html lang="zh‑Hans">
+<head>
+  <meta charset="UTF‑8" />
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0"/>
+  <title>Subscription Agreement | LumoConvert</title>
+  <style>
+    :root{
+      --bg-main:#0b0c14;
+      --bg-card:#141622;
+      --text-primary:#f0f2f8;
+      --text-secondary:#b8bcd0;
+      --accent:#4285ff;
+      --accent‑neon:#7b61ff;
+      --border:#272a3d;
+    }
+    *{box‑sizing:border‑box;margin:0;padding:0;}
+    body{
+      font‑family:‑apple‑system,BlinkMacSystemFont,"PingFang SC","Segoe UI",Roboto,Helvetica,Arial,sans‑serif;
+      background‑color:var(--bg‑main);
+      color:var(--text‑primary);
+      line‑height:1.8;
+      padding:24px 16px;
+      max‑width:860px;
+      margin:0 auto;
+    }
+    .lang‑wrap{
+      display:flex;
+      justify‑content:flex‑end;
+      margin‑bottom:28px;
+    }
+    .lang‑select{
+      background:var(--bg‑card);
+      border:1px solid var(--border);
+      color:var(--text‑primary);
+      padding:6px 10px;
+      border‑radius:6px;
+      font‑size:14px;
+      min‑width:160px;
+    }
+    .container{
+      background:var(--bg‑card);
+      border‑radius:14px;
+      padding:28px 32px;
+      border:1px solid var(--border);
+    }
+    h1{
+      font‑size:26px;
+      margin‑bottom:12px;
+      background:linear‑gradient(90deg,var(--accent),var(--accent‑neon));
+      ‑webkit‑background‑clip:text;
+      color:transparent;
+    }
+    .effective‑date{
+      color:var(--text‑secondary);
+      font‑size:14px;
+      margin‑bottom:24px;
+      padding‑bottom:14px;
+      border‑bottom:1px solid var(--border);
+    }
+    h2{
+      font‑size:18px;
+      margin:28px 0 10px;
+      color:#e2e6f5;
+    }
+    p{
+      color:var(--text‑secondary);
+      margin:10px 0;
+      text‑align:justify;
+    }
+    ul,ol{
+      padding‑left:22px;
+      margin:10px 0;
+      color:var(--text‑secondary);
+    }
+    li{
+      margin:6px 0;
+    }
+    strong{
+      color:#fff;
+    }
+    a{
+      color:var(--accent);
+      text‑decoration:none;
+    }
+    a:hover{text‑decoration:underline;}
+    .note‑box{
+      margin‑top:22px;
+      padding:14px;
+      background:rgba(66,133,255,0.08);
+      border‑radius:8px;
+      text‑align:center;
+      font‑size:14px;
+      color:var(--text‑secondary);
+    }
+    footer{
+      margin‑top:36px;
+      padding‑top:16px;
+      border‑top:1px solid var(--border);
+      color:var(--text‑secondary);
+      font‑size:13px;
+      text‑align:center;
+    }
+    @media(max‑width:600px){
+      .container{padding:20px 16px;}
+      h1{font‑size:22px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="lang‑wrap">
+    <select class="lang‑select" id="langSelect"></select>
+  </div>
+  <div class="container" id="pageContent"></div>
+  <footer>LumoConvert © 2026</footer>
+
+<script>
+const i18n = {
+"zh‑Hans":{
+  title:"订阅服务协议",
+  effective:"生效日期：2026年09月23日",
+  content:`
+<p>适用场景：苹果 App Store 内购、一次性购买、自动续费订阅、免费试用</p>
+<p>本《订阅与内购服务协议》（以下简称“本协议”）是软件开发者（以下简称“我方/开发者”）与您（终端用户）针对本单体工具软件在 Apple App Store 平台内的所有付费购买、一次性解锁、免费试用、自动续费订阅服务所订立的合规法律协议。</p>
+<p>本协议作为<a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">苹果官方《App Store 最终用户许可协议（EULA）》</a>的补充条款，仅用于约定软件功能权益；所有支付、账单、扣费、退款、订阅管理行为均由 Apple 平台规则管辖。您在 App Store 购买、订阅、试用内购服务，即表示您已阅读、理解并同意本协议及 Apple 官方服务条款。</p>
+<h2>一、服务与权益说明</h2>
+<ol>
+<li>本软件为本地单体工具应用，无云端数据存储。所有内购、订阅服务均为虚拟数字功能权益，用于解锁软件高级工具功能，不包含任何实物商品、实体服务或物理资源。</li>
+<li>付费权益包含：一次性永久解锁、周期订阅（月/季/年卡）、限时免费试用等，具体权益内容、价格、周期、试用规则，均以 App Store 购买页及软件内展示为准。</li>
+<li>所有订阅权益仅限用户个人、非商业、不可转让使用，不得共享、出租、售卖、二次分发、商用授权。</li>
+</ol>
+<h2>二、Apple 平台支付与订阅规则</h2>
+<ol>
+<li>支付与账单归属：本软件所有内购、订阅付费均通过 Apple App Store 官方支付渠道完成。所有扣款记录、账单、交易凭证、订阅订单均由 Apple 官方生成与管理，由 Apple 平台规则管辖。</li>
+<li>自动续费规则：若您选择免费试用或自动续费订阅服务，您明确知晓并同意：试用结束/订阅周期到期前，Apple 将自动扣除对应周期费用完成续费。</li>
+<li>用户自主取消权：用户可随时通过 iPhone/iPad 设置 ‑ Apple ID ‑ 订阅 中自主关闭自动续费、取消订阅、终止试用。关闭后，当前已生效的权益可持续使用至当期周期结束，不会提前失效。</li>
+<li>开发者无权干预、无法操作、无法取消用户的 Apple 订阅账单、自动续费状态，所有订阅管理权限仅归用户与 Apple 所有。</li>
+</ol>
+<h2>三、退款规则</h2>
+<ol>
+<li>所有退款事宜仅由 Apple 官方负责。本软件开发者不具备 Apple 支付退款权限，不受理、不承诺、不私自处理任何退款申请。</li>
+<li>用户如需申请退款、异议账单、取消扣费，需严格按照 Apple 官方规则，通过 Apple 客服、App Store 订单申诉通道提交申请。</li>
+<li>虚拟数字服务一经购买激活、权益生效、功能解锁，符合 Apple 虚拟商品服务规则，不支持无理由退款，最终退款结果以 Apple 审核判定为准。</li>
+</ol>
+<h2>四、权益生效与失效规则</h2>
+<ol>
+<li>用户通过 App Store 支付成功后，高级功能权益即时激活生效，依托 Apple 购买凭证授权本地解锁功能。</li>
+<li>订阅周期到期、用户主动取消订阅、Apple 终止订单后，高级付费功能将自动锁定，软件基础免费功能不受影响，可正常永久使用。</li>
+<li>因用户更换设备、重装系统、清除本地授权缓存、篡改本地文件导致的授权失效，用户可通过原 Apple 购买账号恢复购买（Restore Purchase）重新激活权益，开发者提供免费恢复购买通道。</li>
+</ol>
+<h2>五、用户使用规范</h2>
+<ol>
+<li>用户不得破解、篡改、绕过 Apple 购买授权机制，不得通过非 App Store 渠道解锁付费功能。</li>
+<li>禁止利用付费权益进行批量授权、商业倒卖、共享分发、逆向破解等违规行为。违规使用将导致付费权益永久失效，且不享受任何补偿。</li>
+</ol>
+<h2>六、协议优先级与修订</h2>
+<ol>
+<li>如本协议条款与 Apple App Store 服务条款、<a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple EULA</a> 冲突，以 Apple 官方规则为准。</li>
+<li>我方有权根据苹果合规要求、法律法规更新本协议，更新后在软件内公示生效，用户继续使用服务视为接受新版协议。</li>
+</ol>
+<div class="note‑box">
+查看完整的 <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple 标准最终用户许可协议 (EULA)</a>
+</div>
+`
+},
+"zh‑Hant":{
+  title:"訂閱服務協議",
+  effective:"生效日期：2026年09月23日",
+  content:`
+<p>適用場景：Apple App Store 內購、一次性購買、自動續約訂閱、免費試用</p>
+<p>本《訂閱與內購服務協議》（以下簡稱「本協議」）為軟體開發者（我方）與終端使用者就本工具軟體在 Apple App Store 平台之所有付費購買、一次性解鎖、免費試用、自動續約訂閱所訂立之法律協議。</p>
+<p>本協議為<a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple官方《App Store 最終使用者許可協議(EULA)》</a>補充條款。所有付款、帳單、扣款、退款、訂閱管理皆受 Apple 平台規則管轄。您於 App Store 進行購買、訂閱、試用即代表已閱讀並同意本協議與 Apple 服務條款。</p>
+<h2>一、服務與權益說明</h2>
+<ol>
+<li>本軟體為本機工具應用，無雲端資料儲存。所有內購與訂閱皆為虛擬數位權益，用於解鎖進階工具功能，不含實體商品或實體服務。</li>
+<li>付費權益包含一次性永久解鎖、週期訂閱(月/季/年)、限時免費試用；價格、週期、試用規則以 App Store 購買頁與軟體內顯示為準。</li>
+<li>訂閱權益僅限個人非商業使用，不可轉讓，不得分享、出租、販售、二次散佈或商業授權。</li>
+</ol>
+<h2>二、Apple平台付款與訂閱規則</h2>
+<ol>
+<li>所有內購與訂閱透過 Apple App Store 完成。帳單、交易憑證、訂閱訂單由 Apple 產生與管理，受 Apple 規則管轄。</li>
+<li>若您選擇免費試用或自動續約，您同意：試用或訂閱週期結束前 Apple 將自動扣取費用完成續約。</li>
+<li>使用者可隨時於 iPhone / iPad 設定‑Apple ID‑訂閱關閉自動續約、取消訂閱。關閉後當期權益可使用至週期完結，不會提前失效。</li>
+<li>開發者無法修改、取消使用者 Apple 訂閱狀態，訂閱管理權限歸使用者與 Apple。</li>
+</ol>
+<h2>三、退款規則</h2>
+<ol>
+<li>退款由 Apple 官方處理，開發者沒有退款權限，不受理私下退款申請。</li>
+<li>如需退款或對帳單有異議，請透過 Apple 客服或 App Store 訂單申訴管道提交。</li>
+<li>虛擬數位服務一旦啟用解鎖，依 Apple 規則不支援無理由退款，退款結果由 Apple 判定。</li>
+</ol>
+<h2>四、權益生效與失效</h2>
+<ol>
+<li>App Store付款成功後進階功能立即啟用，透過 Apple 購買憑證於本機解鎖。</li>
+<li>訂閱到期、手動取消或 Apple 終止訂單，進階付費功能將鎖定；基礎免費功能可永久正常使用。</li>
+<li>更換裝置、重裝系統、清除快取導致授權遺失，可使用原 Apple帳號執行「恢復購買(Restore Purchase)」重新啟用。</li>
+</ol>
+<h2>五、使用者使用規範</h2>
+<ol>
+<li>禁止破解、繞過 Apple 授權機制，禁止非 App Store 管道解鎖付費功能。</li>
+<li>禁止批量授權、轉賣、分享、逆向破解；違規將導致付費權益永久失效且無補償。</li>
+</ol>
+<h2>六、協議優先順序與修訂</h2>
+<ol>
+<li>本協議若與 <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple EULA</a> 衝突，以 Apple 官方條款為準。</li>
+<li>我方得依法律與 Apple 合規要求更新協議，更新後公佈即生效，繼續使用視為接受新版本。</li>
+</ol>
+<div class="note‑box">
+查看完整的 <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple 最終使用者許可協議(EULA)</a>
+</div>
+`
+},
+"en‑US":{
+  title:"Subscription Agreement",
+  effective:"Effective Date: September 23, 2026",
+  content:`
+<p>Applicable scenarios: App Store In‑App Purchases, one‑time purchases, auto‑renewable subscriptions, free trials.</p>
+<p>This Subscription & In‑App Purchase Agreement (the “Agreement”) is a legal contract between the software developer (“us/developer”) and you (end‑user) governing all paid purchases, one‑time unlocks, free trials and auto‑renewable subscriptions for this utility app on Apple App Store.</p>
+<p>This Agreement supplements the <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple Standard EULA</a>. All payments, billing, charges, refunds and subscription management are governed by Apple’s terms. By purchasing, subscribing or trialing in‑app items on App Store, you acknowledge reading and accepting this Agreement and Apple’s official terms.</p>
+<h2>1. Services & Benefits</h2>
+<ol>
+<li>This is a local‑first utility without cloud data storage. All IAP and subscriptions grant virtual digital benefits to unlock premium tools. No physical goods or physical services are included.</li>
+<li>Paid benefits include permanent one‑time unlock, periodic subscriptions (monthly / quarterly / yearly), limited‑time free trials. Exact benefits, pricing, cycle and trial rules are shown on App Store product page and inside‑app.</li>
+<li>Subscription benefits are for your personal, non‑commercial, non‑transferable use only. You may not share, rent, resell, redistribute or commercially license them.</li>
+</ol>
+<h2>2. Apple Payment & Subscription Rules</h2>
+<ol>
+<li>All IAP and subscription payments go through official Apple App Store payment system. Receipts, bills, transaction records and subscription orders are generated and managed solely by Apple under Apple’s policies.</li>
+<li>If you enable a free trial or auto‑renew subscription: you understand and agree Apple will automatically charge your payment method upon trial expiry or end of each billing cycle.</li>
+<li>You may disable auto‑renew or cancel your subscription anytime in iPhone / iPad Settings → Apple ID → Subscriptions. After cancellation your active benefits remain valid until end of current billing period.</li>
+<li>The developer cannot modify, intervene or cancel your Apple subscription status. Subscription controls belong to you and Apple only.</li>
+</ol>
+<h2>3. Refund Policy</h2>
+<ol>
+<li>Refunds are handled exclusively by Apple. The developer holds no refund authority and will not process private refund requests.</li>
+<li>If you seek refund or dispute charges please contact Apple Support or use App Store order‑dispute channels.</li>
+<li>Once virtual digital service is activated and features unlocked, no unconditional refund applies per Apple rules. Final refund decision rests with Apple.</li>
+</ol>
+<h2>4. Activation & Expiry</h2>
+<ol>
+<li>Premium features activate immediately upon successful App Store purchase, unlocked locally using Apple purchase receipt.</li>
+<li>When subscription expires, you cancel, or Apple terminates order: premium paid features lock. Free base features remain fully usable permanently.</li>
+<li>If authorization is lost due to device change, reinstall or cache clearing, restore purchase via your original Apple account (Restore Purchase).</li>
+</ol>
+<h2>5. User Conduct</h2>
+<ol>
+<li>Do not crack, tamper or bypass Apple purchase authorization. Do not unlock premium features outside App Store.</li>
+<li>Prohibited: mass licensing, resale, sharing, reverse‑engineering. Violations cause permanent loss of paid benefits without compensation.</li>
+</ol>
+<h2>6. Agreement Priority & Revisions</h2>
+<ol>
+<li>If any term conflicts with <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple EULA</a>, Apple’s official terms prevail.</li>
+<li>We may revise this Agreement for legal or App Store compliance. Revised version takes effect upon publication. Continued use means acceptance of updated terms.</li>
+</ol>
+<div class="note‑box">
+Read full <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple Standard End‑User License Agreement (EULA)</a>
+</div>
+`
+},
+"ja":{
+  title:"サブスクリプション利用規約",
+  effective:"発効日：2026年09月23日",
+  content:`
+<p>適用範囲：App Storeアプリ内課金、一括購入、自動更新サブスクリプション、無料トライアル</p>
+<p>本サブスクリプション・アプリ内課金規約は、開発者とエンドユーザーの間で締結される法的な契約であり、Apple App Store上での本アプリの購入、一括アンロック、無料トライアル、自動更新サブスクリプションに適用されます。</p>
+<p>本規約は<a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple標準EULA</a>の補足条項です。お支払い、請求、返金、サブスク管理はAppleのルールに従います。App Storeで購入・契約することで本規約とAppleの規約に同意したものとみなされます。</p>
+<h2>1.サービスと権利</h2>
+<ol>
+<li>本アプリはローカル実行型ツールでクラウドにデータを保存しません。アプリ内課金・サブスクはプレミアム機能を解除する仮想的な権利であり、実物商品は含まれません。</li>
+<li>有料権利には永久一括解除、月/四半期/年間サブスク、期間限定無料トライアルがあり、価格や条件はApp Storeおよびアプリ内の表示に従います。</li>
+<li>サブスク権利は個人非営利利用に限り、譲渡・共有・販売・再配布・商用ライセンスは禁止されます。</li>
+</ol>
+<h2>2.Apple決済とサブスクルール</h2>
+<ol>
+<li>すべての課金はApple App Store経由で行われ、請求書・取引記録・サブスク情報はAppleが管理します。</li>
+<li>無料トライアルまたは自動更新サブスクを選択した場合、トライアル終了または契約期間終了時にAppleが自動で課金を実行します。</li>
+<li>設定→Apple ID→サブスクリプションからいつでも自動更新をオフ・解約可能。解約後も契約期間が終わるまで権利は有効です。</li>
+<li>開発者はユーザーのサブスク状態を変更・キャンセルすることはできません。管理権限はユーザーとAppleにあります。</li>
+</ol>
+<h2>3.返金ポリシー</h2>
+<ol>
+<li>返金手続きはAppleが実施し、開発者に返金権限はありません。</li>
+<li>返金や請求に異議がある場合はAppleサポートまたはApp Storeの注文申し立てより申請してください。</li>
+<li>仮想デジタルサービスは有効化後、Appleのルール上無条件返金には対応しません。最終判断はAppleが行います。</li>
+</ol>
+<h2>4.権利の有効化と失効</h2>
+<ol>
+<li>App Storeでの購入完了時、Appleの購入レシートによりプレミアム機能が端末上で即時有効化されます。</li>
+<li>サブスクが期限切れ、解約またはAppleが注文を終了すると有料機能はロックされます。無料基本機能は引き続き利用可能です。</li>
+<li>機種変更、再インストールなどで権利が失われた場合は元のAppleアカウントで「購入を復元(Restore Purchase)」を実行してください。</li>
+</ol>
+<h2>5.ユーザーの利用ルール</h2>
+<ol>
+<li>Appleの認証機構を回避・改ざんしたり、App Store以外から有料機能を解除する行為を禁止します。</li>
+<li>大量ライセンス、転売、共有、リバースエンジニアリングは禁止。違反した場合、補償なしで有料権利が永久に失効します。</li>
+</ol>
+<h2>6.規約の優先順位と改定</h2>
+<ol>
+<li>本規約と<a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple EULA</a>に矛盾がある場合はAppleの規約が優先されます。</li>
+<li>法令またはApp Storeコンプライアンスのため規約を改定することがあり、公開時点で効力を生じ、継続利用は改定版に同意したものとみなされます。</li>
+</ol>
+<div class="note‑box">
+<a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple標準エンドユーザーライセンス契約(EULA)</a>を確認する
+</div>
+`
+},
+"ko":{
+  title:"구독 서비스 약관",
+  effective:"시행일: 2026년 09월 23일",
+  content:`
+<p>적용 범위: App Store 인앱 구매, 일회성 구매, 자동 갱신 구독, 무료 체험</p>
+<p>본 구독 및 인앱 구매 약관은 개발자와 최종 사용자 간의 법적 계약으로 Apple App Store에서의 앱 내 모든 유료 구매, 일회성 잠금 해제, 무료 체험, 자동 갱신 구독에 적용됩니다.</p>
+<p>본 약관은 <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple 표준 최종 사용자 라이선스 계약(EULA)</a>의 보충 조항입니다. 결제, 청구, 환불, 구독 관리는 Apple 규칙에 따릅니다. App Store에서 구매·구독하는 행위는 본 약관 및 Apple 약관에 동의함을 의미합니다.</p>
+<h2>1. 서비스 및 권리 안내</h2>
+<ol>
+<li>본 앱은 로컬 기반 유틸리티로 클라우드 데이터 저장 기능이 없습니다. 인앱 구매와 구독은 프리미엄 기능을 해제하는 가상 디지털 권리이며 실물 상품을 포함하지 않습니다.</li>
+<li>유료 권리는 영구 일회성 잠금해제, 월/분기/연간 구독, 한정 무료 체험을 포함하며 가격과 규칙은 App Store 및 앱 내 표시 기준입니다.</li>
+<li>구독 권리는 개인 비상업적 사용만 허용되며 양도, 공유, 판매, 재배포, 상업적 라이선스가 금지됩니다.</li>
+</ol>
+<h2>2. Apple 결제 및 구독 규칙</h2>
+<ol>
+<li>모든 인앱 결제는 Apple App Store를 통해 처리되며 영수증, 거래 기록, 구독 정보는 Apple이 관리합니다.</li>
+<li>무료 체험 또는 자동 갱신 구독을 선택하면 체험 종료 혹은 구독 주기 종료 시 Apple이 자동으로 요금을 청구합니다.</li>
+<li>iPhone / iPad 설정 → Apple ID → 구독에서 언제든 자동 갱신을 끄거나 구독을 취소할 수 있습니다. 취소 후 현재 주기의 권리는 만료까지 유지됩니다.</li>
+<li>개발자는 사용자의 구독 상태를 수정하거나 취소할 수 없으며 관리 권한은 사용자와 Apple에 있습니다.</li>
+</ol>
+<h2>3. 환불 규정</h2>
+<ol>
+<li>환불 처리는 Apple에서만 진행하며 개발자는 환불 권한이 없습니다.</li>
+<li>환불 또는 청구 이의 제기는 Apple 지원 또는 App Store 주문 분쟁 채널을 통해 신청하십시오.</li>
+<li>가상 디지털 서비스는 활성화 후 Apple 규칙상 무조건 환불이 지원되지 않으며 최종 결정은 Apple에 있습니다.</li>
+</ol>
+<h2>4. 권리 활성화 및 만료</h2>
+<ol>
+<li>App Store 구매 완료 시 Apple 구매 영수증 기반으로 프리미엄 기능이 기기에서 즉시 활성화됩니다.</li>
+<li>구독 만료, 사용자 취소, Apple 주문 종료 시 유료 기능은 잠기고 기본 무료 기능은 계속 사용 가능합니다.</li>
+<li>기기 교체, 재설치로 권리가 손실되면 원본 Apple 계정으로 “구매 복원(Restore Purchase)”을 실행하십시오.</li>
+</ol>
+<h2>5. 사용자 준수 사항</h2>
+<ol>
+<li>Apple 인증 메커니즘을 우회·변조하거나 App Store 외 경로로 유료 기능을 해제하는 행위를 금지합니다.</li>
+<li>대량 라이선싱, 재판매, 공유, 리버스 엔지니어링은 금지하며 위반 시 보상 없이 유료 권리가 영구 상실됩니다.</li>
+</ol>
+<h2>6. 약관 우선순위 및 개정</h2>
+<ol>
+<li>본 약관이 <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple EULA</a>와 충돌할 경우 Apple 공식 조항이 우선합니다.</li>
+<li>법률 및 App Store 규정에 따라 약관을 개정할 수 있으며 공개 시점부터 효력이 발생하고 계속 사용은 개정 약관 동의로 간주합니다.</li>
+</ol>
+<div class="note‑box">
+<a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple 표준 최종 사용자 라이선스 계약(EULA)</a> 확인
+</div>
+`
+},
+"de‑DE":{
+  title:"Abonnement‑Vereinbarung",
+  effective:"Gültig ab: 23. September 2026",
+  content:`
+<p>Anwendungsfälle: App Store In‑App‑Käufe, Einmal‑Käufe, automatisch verlängerbare Abonnements, kostenlose Testphasen.</p>
+<p>Diese Abonnement‑ und In‑App‑Kauf‑Vereinbarung stellt einen rechtskräftigen Vertrag zwischen dem Entwickler („wir“) und Ihnen als Endnutzer dar für alle entgeltlichen Käufe, Einmal‑Freischaltungen, Testphasen und automatisch verlängerbaren Abonnements dieser Anwendung im Apple App Store.</p>
+<p>Diese Vereinbarung ergänzt die <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple Standard‑EULA</a>. Zahlungen, Rechnungen, Belastungen, Rückerstattungen und Abonnementverwaltung unterliegen den Apple‑Bedingungen. Mit Kauf, Abonnement oder Test im App Store akzeptieren Sie diese Vereinbarung sowie Apples Nutzungsbedingungen.</p>
+<h2>1. Leistungen und Rechte</h2>
+<ol>
+<li>Dies ist eine lokal ausgeführte Anwendung ohne Cloud‑Datenspeicherung. Alle In‑App‑Käufe und Abonnements gewähren virtuelle digitale Rechte zur Freischaltung von Premium‑Funktionen. Keine physischen Waren oder Dienstleistungen sind enthalten.</li>
+<li>Entgeltliche Leistungen umfassen dauerhafte Einmal‑Freischaltung, periodische Abonnements (monatlich / vierteljährlich / jährlich), zeitlich begrenzte kostenlose Tests. Genauer Umfang, Preise und Regeln werden im App Store und innerhalb der App angezeigt.</li>
+<li>Abonnement‑Rechte dürfen nur persönlich, nicht‑kommerziell und nicht übertragen genutzt werden. Weitergabe, Vermietung, Weiterverkauf oder kommerzielle Lizenzierung sind untersagt.</li>
+</ol>
+<h2>2. Apple‑Zahlung und Abonnement‑Regeln</h2>
+<ol>
+<li>Sämtliche In‑App‑Zahlungen erfolgen über den offiziellen Apple App Store. Quittungen, Rechnungen und Abonnement‑Bestellungen werden ausschließlich von Apple verwaltet.</li>
+<li>Bei kostenlosem Test oder automatisch verlängerbarem Abonnement willigen Sie ein, dass Apple bei Ablauf der Test‑ oder Abo‑Periode automatisch die anfallenden Kosten abbucht.</li>
+<li>Sie können die automatische Verlängerung jederzeit unter iPhone / iPad Einstellungen → Apple‑ID → Abonnements deaktivieren. Nach Kündigung bleiben erworbene Rechte bis zum Ende der laufenden Periode gültig.</li>
+<li>Der Entwickler kann Ihren Apple‑Abonnement‑Status weder ändern noch kündigen. Die Steuerung liegt bei Ihnen und Apple.</li>
+</ol>
+<h2>3. Rückerstattungsregeln</h2>
+<ol>
+<li>Rückerstattungen werden ausschließlich von Apple bearbeitet. Der Entwickler besitzt keine Rückerstattungsbefugnis und bearbeitet keine privaten Rückerstattungsanfragen.</li>
+<li>Für Rückerstattungen oder Rechnungsbeanstandungen wenden Sie sich bitte an den Apple‑Support oder nutzen Sie die Streit‑Kanäle im App Store.</li>
+<li>Nach Aktivierung virtueller digitaler Leistungen gilt nach Apple‑Regeln kein bedingungsloses Rückgaberecht. Die endgültige Entscheidung trifft Apple.</li>
+</ol>
+<h2>4. Aktivierung und Ablauf von Rechten</h2>
+<ol>
+<li>Premium‑Funktionen werden nach erfolgreichem App‑Store‑Kauf sofort lokal über die Apple‑Kauf‑Quittung freigeschaltet.</li>
+<li>Bei Ablauf, Kündigung oder Beendigung durch Apple werden die entgeltlichen Premium‑Funktionen gesperrt. Kostenlose Basis‑Funktionen bleiben dauerhaft nutzbar.</li>
+<li>Gehen Berechtigungen durch Gerätewechsel, Neuinstallation oder Cache‑Löschung verloren, nutzen Sie „Käufe wiederherstellen (Restore Purchase)“ mit Ihrem ursprünglichen Apple‑Account.</li>
+</ol>
+<h2>5. Nutzerverhalten</h2>
+<ol>
+<li>Das Umgehen, Manipulieren oder Knacken der Apple‑Kauf‑Autorisierung ist verboten. Premium‑Funktionen dürfen nicht außerhalb des App Stores freigeschaltet werden.</li>
+<li>Untersagt sind Massenlizenzierung, Weiterverkauf, Weitergabe und Reverse‑Engineering. Verstöße führen zum dauerhaften Verlust aller entgeltlichen Rechte ohne Entschädigung.</li>
+</ol>
+<h2>6. Vorrang und Überarbeitung der Vereinbarung</h2>
+<ol>
+<li>Bei Widersprüchen zur <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple‑EULA</a> gelten die offiziellen Apple‑Bedingungen.</li>
+<li>Wir können diese Vereinbarung aus rechtlichen oder App‑Store‑Gründen überarbeiten. Die überarbeitete Fassung tritt mit Veröffentlichung in Kraft. Fortgesetzte Nutzung gilt als Akzeptanz.</li>
+</ol>
+<div class="note‑box">
+Vollständige <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple Standard‑Endbenutzer‑Lizenzvereinbarung (EULA)</a> ansehen
+</div>
+`
+},
+"fr‑FR":{
+  title:"Contrat d’abonnement",
+  effective:"Date d’entrée en vigueur : 23 septembre 2026",
+  content:`
+<p>Scénarios applicables : achats intégrés App Store, achats uniques, abonnements à renouvellement automatique, essais gratuits.</p>
+<p>Ce Contrat d’abonnement et d’achats intégrés est un accord juridique entre le développeur (« nous ») et vous‑même (utilisateur final) régissant tous achats payants, déblocages uniques, essais gratuits et abonnements à renouvellement automatique de cette application utilitaire sur l’App Store Apple.</p>
+<p>Ce document complète la <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">EULA standard Apple</a>. Tous paiements, facturations, remboursements et gestion des abonnements sont régis par les conditions Apple. En achetant, souscrivant ou testant des éléments dans l’app, vous reconnaissez avoir lu et accepté ce contrat ainsi que les conditions officielles d’Apple.</p>
+<h2>1. Services et avantages</h2>
+<ol>
+<li>Il s’agit d’une application locale sans stockage cloud. Les achats intégrés et abonnements offrent des avantages numériques virtuels pour débloquer des outils premium. Aucun bien physique ni service physique n’est inclus.</li>
+<li>Les avantages payants comprennent déblocage permanent unique, abonnements périodiques (mensuel / trimestriel / annuel), essais gratuits limités. Les tarifs, cycles et règles d’essai sont affichés sur la page produit App Store et dans l’application.</li>
+<li>Les avantages d’abonnement sont réservés à votre usage personnel non commercial, non transférable. Vous ne pouvez pas les partager, louer, revendre ni en faire une licence commerciale.</li>
+</ol>
+<h2>2. Paiement et règles d’abonnement Apple</h2>
+<ol>
+<li>Tous paiements intégrés transitent par le système officiel de paiement App Store. Les reçus, factures et commandes d’abonnement sont générés et gérés exclusivement par Apple.</li>
+<li>Si vous activez un essai gratuit ou un abonnement à renouvellement automatique : vous acceptez qu’Apple prélève automatiquement le montant à l’expiration de l’essai ou de chaque période de facturation.</li>
+<li>Vous pouvez désactiver le renouvellement automatique ou annuler votre abonnement à tout moment dans Réglages iPhone / iPad → identifiant Apple → Abonnements. Après annulation vos avantages restent valables jusqu’à la fin de la période en cours.</li>
+<li>Le développeur ne peut pas modifier ni annuler votre statut d’abonnement Apple ; le contrôle appartient à vous‑même et à Apple.</li>
+</ol>
+<h2>3. Politique de remboursement</h2>
+<ol>
+<li>Les remboursements sont traités exclusivement par Apple. Le développeur n’a aucun pouvoir de remboursement et ne traite pas de demandes privées.</li>
+<li>Pour demander un remboursement ou contester une charge, contactez le support Apple ou utilisez les canaux de litige des commandes App Store.</li>
+<li>Une fois le service numérique virtuel activé et les fonctionnalités débloquées, aucun remboursement sans motif ne s’applique selon les règles Apple. La décision finale appartient à Apple.</li>
+</ol>
+<h2>4. Activation et expiration</h2>
+<ol>
+<li>Les fonctionnalités premium s’activent immédiatement après achat réussi sur App Store, débloquées localement grâce au reçu d’achat Apple.</li>
+<li>À l’expiration, après annulation ou fin de commande par Apple : les fonctionnalités payantes se verrouillent. Les fonctionnalités gratuites de base restent utilisables en permanence.</li>
+<li>Si l’autorisation est perdue suite à changement d’appareil, réinstallation ou suppression du cache, utilisez « Restaurer les achats (Restore Purchase) » avec votre compte Apple d’origine.</li>
+</ol>
+<h2>5. Comportement de l’utilisateur</h2>
+<ol>
+<li>Il est interdit de contourner, altérer ou pirater le mécanisme d’autorisation d’achat Apple. Ne débloquez pas les fonctionnalités premium hors de l’App Store.</li>
+<li>Sont interdits : licences massives, revente, partage, rétro‑ingénierie. Les violations entraînent la perte définitive des avantages payants sans indemnité.</li>
+</ol>
+<h2>6. Priorité et révisions du contrat</h2>
+<ol>
+<li>En cas de conflit avec la <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">EULA Apple</a>, les conditions officielles d’Apple prévalent.</li>
+<li>Nous pouvons réviser ce contrat pour des raisons juridiques ou de conformité App Store. La version révisée prend effet à sa publication. L’usage continu vaut acceptation des nouvelles conditions.</li>
+</ol>
+<div class="note‑box">
+Consulter l’intégralité de la <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Licence utilisateur final standard Apple (EULA)</a>
+</div>
+`
+}
+};
+
+const langList = [
+  {code:"zh‑Hans",label:"简体中文"},
+  {code:"zh‑Hant",label:"繁體中文"},
+  {code:"en‑US",label:"English"},
+  {code:"ja",label:"日本語"},
+  {code:"ko",label:"한국어"},
+  {code:"de‑DE",label:"Deutsch"},
+  {code:"fr‑FR",label:"Français"}
+];
+
+const selectEl = document.getElementById("langSelect");
+const pageEl = document.getElementById("pageContent");
+
+langList.forEach(l=>{
+  const opt = document.createElement("option");
+  opt.value = l.code;
+  opt.textContent = l.label;
+  selectEl.appendChild(opt);
+});
+
+selectEl.onchange = function(){
+  setLang(this.value);
+};
+
+function setLang(code){
+  const t = i18n[code] ?? i18n["en‑US"];
+  document.title = t.title + " | LumoConvert";
+  document.documentElement.lang = code;
+  selectEl.value = code;
+  pageEl.innerHTML = `<h1>${t.title}</h1><div class="effective‑date">${t.effective}</div>${t.content}`;
+  localStorage.setItem("sub_lang",code);
+}
+
+(function(){
+  const saved = localStorage.getItem("sub_lang");
+  let match = "en‑US";
+  if(saved && i18n[saved]){
+    match = saved;
+  }else{
+    const brLang = navigator.language || navigator.userLanguage;
+    if(brLang.startsWith("zh‑CN")) match="zh‑Hans";
+    else if(brLang.startsWith("zh‑TW")||brLang.startsWith("zh‑HK")) match="zh‑Hant";
+    else if(brLang.startsWith("ja")) match="ja";
+    else if(brLang.startsWith("ko")) match="ko";
+    else if(brLang.startsWith("de")) match="de‑DE";
+    else if(brLang.startsWith("fr")) match="fr‑FR";
+  }
+  setLang(match);
+})();
+</script>
+</body>
+</html>
