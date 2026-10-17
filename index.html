@@ -1,129 +1,151 @@
-
 <!DOCTYPE html>
-<html lang="zh‑Hans">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF‑8" />
-  <meta name="viewport" content="width=device‑width, initial‑scale=1.0"/>
-  <title>Subscription Agreement | LumoConvert</title>
-  <style>
-    :root{
-      --bg-main:#0b0c14;
-      --bg-card:#141622;
-      --text-primary:#f0f2f8;
-      --text-secondary:#b8bcd0;
-      --accent:#4285ff;
-      --accent‑neon:#7b61ff;
-      --border:#272a3d;
-    }
-    *{box‑sizing:border‑box;margin:0;padding:0;}
-    body{
-      font‑family:‑apple‑system,BlinkMacSystemFont,"PingFang SC","Segoe UI",Roboto,Helvetica,Arial,sans‑serif;
-      background‑color:var(--bg‑main);
-      color:var(--text‑primary);
-      line‑height:1.8;
-      padding:24px 16px;
-      max‑width:860px;
-      margin:0 auto;
-    }
-    .lang‑wrap{
-      display:flex;
-      justify‑content:flex‑end;
-      margin‑bottom:28px;
-    }
-    .lang‑select{
-      background:var(--bg‑card);
-      border:1px solid var(--border);
-      color:var(--text‑primary);
-      padding:6px 10px;
-      border‑radius:6px;
-      font‑size:14px;
-      min‑width:160px;
-    }
-    .container{
-      background:var(--bg‑card);
-      border‑radius:14px;
-      padding:28px 32px;
-      border:1px solid var(--border);
-    }
-    h1{
-      font‑size:26px;
-      margin‑bottom:12px;
-      background:linear‑gradient(90deg,var(--accent),var(--accent‑neon));
-      ‑webkit‑background‑clip:text;
-      color:transparent;
-    }
-    .effective‑date{
-      color:var(--text‑secondary);
-      font‑size:14px;
-      margin‑bottom:24px;
-      padding‑bottom:14px;
-      border‑bottom:1px solid var(--border);
-    }
-    h2{
-      font‑size:18px;
-      margin:28px 0 10px;
-      color:#e2e6f5;
-    }
-    p{
-      color:var(--text‑secondary);
-      margin:10px 0;
-      text‑align:justify;
-    }
-    ul,ol{
-      padding‑left:22px;
-      margin:10px 0;
-      color:var(--text‑secondary);
-    }
-    li{
-      margin:6px 0;
-    }
-    strong{
-      color:#fff;
-    }
-    a{
-      color:var(--accent);
-      text‑decoration:none;
-    }
-    a:hover{text‑decoration:underline;}
-    .note‑box{
-      margin‑top:22px;
-      padding:14px;
-      background:rgba(66,133,255,0.08);
-      border‑radius:8px;
-      text‑align:center;
-      font‑size:14px;
-      color:var(--text‑secondary);
-    }
-    footer{
-      margin‑top:36px;
-      padding‑top:16px;
-      border‑top:1px solid var(--border);
-      color:var(--text‑secondary);
-      font‑size:13px;
-      text‑align:center;
-    }
-    @media(max‑width:600px){
-      .container{padding:20px 16px;}
-      h1{font‑size:22px;}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Subscription Agreement · LumoConvert</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='6' fill='%238b7cf6'/><polygon points='13 5 7 14 12 14 11 19 17 10 12 10 13 5' fill='white'/></svg>">
+<style>
+  :root {
+    --bg: #0c0c12;
+    --surface: #14141c;
+    --surface-2: #1c1c28;
+    --border: #262636;
+    --text: #ececf2;
+    --muted: #9a9ab0;
+    --accent: #8b7cf6;
+    --accent-2: #5ec8e8;
+    --accent-grad: linear-gradient(135deg, #8b7cf6 0%, #5ec8e8 100%);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", "Helvetica Neue", sans-serif;
+    line-height: 1.7;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent-2); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  .lang-wrap {
+    display: flex; justify-content: flex-end;
+    padding: 20px 0 0;
+  }
+  .lang-select {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 11px;
+    border-radius: 7px;
+    font-size: 12.5px;
+    font-family: inherit;
+    min-width: 160px;
+  }
+  .hero {
+    padding: 48px 0 40px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  .hero h1 {
+    font-size: 28px; font-weight: 700; letter-spacing: -0.5px;
+    margin-bottom: 10px;
+    background: var(--accent-grad);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .hero .date-note {
+    color: var(--muted);
+    font-size:14px;
+  }
+  section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+  h2 {
+    font-size: 19px; font-weight: 700; margin:28px 0 10px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  h2::before {
+    content: ""; width: 4px; height: 18px; border-radius: 2px;
+    background: var(--accent-grad);
+  }
+  p {
+    color: var(--muted);
+    margin:10px 0;
+    text-align: justify;
+  }
+  ul,ol {
+    padding-left:22px;
+    margin:10px 0;
+    color:var(--muted);
+  }
+  li {
+    margin:6px 0;
+  }
+  strong { color:var(--text); font-weight:600; }
+  .note-box{
+    margin-top:22px;
+    padding:14px;
+    background:rgba(139,124,246,0.08);
+    border-radius:8px;
+    text-align:center;
+    font-size:14px;
+    color:var(--muted);
+  }
+  footer {
+    padding: 32px 0 48px;
+    text-align: center;
+    color: var(--muted); font-size: 12.5px;
+  }
+  footer .links { margin-bottom: 10px; }
+  footer .links a { margin: 0 10px; }
+  @media (max-width: 600px) {
+    .hero { padding: 32px 0 28px; }
+    .hero h1 { font-size: 22px; }
+    h2 { font-size: 17px; }
+  }
+</style>
 </head>
 <body>
-  <div class="lang‑wrap">
-    <select class="lang‑select" id="langSelect"></select>
+<div class="wrap">
+  <div class="lang-wrap">
+    <select class="lang-select" id="langSelect"></select>
   </div>
-  <div class="container" id="pageContent"></div>
-  <footer>LumoConvert © 2026</footer>
+  <div class="hero">
+    <h1 data-i18n="title"></h1>
+    <div class="date-note" data-i18n="effectiveDate"></div>
+  </div>
+  <div id="contentBody"></div>
+  <footer>
+    <div class="links">
+      <a href="https://shamoshuisheng.github.io/privacy" target="_blank" data-i18n="linkPrivacy"></a>
+      <a href="https://shamoshuisheng.github.io/userTerms" target="_blank" data-i18n="linkTerms"></a>
+      <a href="https://shamoshuisheng.github.io/subscription" target="_blank" data-i18n="linkSubscription"></a>
+    </div>
+    <div>© 2026 LumoConvert. All rights reserved.</div>
+  </footer>
+</div>
 
 <script>
-const i18n = {
-"zh‑Hans":{
+var EMAIL = "shamoshuisheng@163.com";
+var URL_PRIVACY = "https://shamoshuisheng.github.io/privacy";
+var URL_TERMS = "https://shamoshuisheng.github.io/userTerms";
+var URL_SUBSCRIPTION = "https://shamoshuisheng.github.io/subscription";
+var APPLE_EULA = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/";
+
+var I18N = {};
+I18N["zh-CN"] = {
+  langName:"简体中文",
   title:"订阅服务协议",
-  effective:"生效日期：2026年09月23日",
-  content:`
-<p>适用场景：苹果 App Store 内购、一次性购买、自动续费订阅、免费试用</p>
+  effectiveDate:"生效日期：2026年09月23日",
+  linkPrivacy:"隐私政策",
+  linkTerms:"用户使用条款",
+  linkSubscription:"订阅服务协议",
+  html:`
+<p>适用场景：苹果 App Store 内购、一次性购买、自动续费订阅、免费试用。</p>
 <p>本《订阅与内购服务协议》（以下简称“本协议”）是软件开发者（以下简称“我方/开发者”）与您（终端用户）针对本单体工具软件在 Apple App Store 平台内的所有付费购买、一次性解锁、免费试用、自动续费订阅服务所订立的合规法律协议。</p>
-<p>本协议作为<a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">苹果官方《App Store 最终用户许可协议（EULA）》</a>的补充条款，仅用于约定软件功能权益；所有支付、账单、扣费、退款、订阅管理行为均由 Apple 平台规则管辖。您在 App Store 购买、订阅、试用内购服务，即表示您已阅读、理解并同意本协议及 Apple 官方服务条款。</p>
+<p>本协议作为<a href="${APPLE_EULA}" target="_blank">苹果官方《App Store 最终用户许可协议（EULA）》</a>的补充条款，仅用于约定软件功能权益；所有支付、账单、扣费、退款、订阅管理行为均由 Apple 平台规则管辖。您在 App Store 购买、订阅、试用内购服务，即表示您已阅读、理解并同意本协议及 Apple 官方服务条款。同时请阅读<a href="${URL_TERMS}" target="_blank">用户使用条款</a>与<a href="${URL_PRIVACY}" target="_blank">隐私政策</a>。</p>
 <h2>一、服务与权益说明</h2>
 <ol>
 <li>本软件为本地单体工具应用，无云端数据存储。所有内购、订阅服务均为虚拟数字功能权益，用于解锁软件高级工具功能，不包含任何实物商品、实体服务或物理资源。</li>
@@ -134,7 +156,7 @@ const i18n = {
 <ol>
 <li>支付与账单归属：本软件所有内购、订阅付费均通过 Apple App Store 官方支付渠道完成。所有扣款记录、账单、交易凭证、订阅订单均由 Apple 官方生成与管理，由 Apple 平台规则管辖。</li>
 <li>自动续费规则：若您选择免费试用或自动续费订阅服务，您明确知晓并同意：试用结束/订阅周期到期前，Apple 将自动扣除对应周期费用完成续费。</li>
-<li>用户自主取消权：用户可随时通过 iPhone/iPad 设置 ‑ Apple ID ‑ 订阅 中自主关闭自动续费、取消订阅、终止试用。关闭后，当前已生效的权益可持续使用至当期周期结束，不会提前失效。</li>
+<li>用户自主取消权：用户可随时通过 iPhone / iPad 设置 → Apple ID → 订阅 中自主关闭自动续费、取消订阅、终止试用。关闭后，当前已生效的权益可持续使用至当期周期结束，不会提前失效。</li>
 <li>开发者无权干预、无法操作、无法取消用户的 Apple 订阅账单、自动续费状态，所有订阅管理权限仅归用户与 Apple 所有。</li>
 </ol>
 <h2>三、退款规则</h2>
@@ -156,21 +178,25 @@ const i18n = {
 </ol>
 <h2>六、协议优先级与修订</h2>
 <ol>
-<li>如本协议条款与 Apple App Store 服务条款、<a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple EULA</a> 冲突，以 Apple 官方规则为准。</li>
+<li>如本协议条款与 Apple App Store 服务条款、<a href="${APPLE_EULA}" target="_blank">Apple EULA</a> 冲突，以 Apple 官方规则为准。</li>
 <li>我方有权根据苹果合规要求、法律法规更新本协议，更新后在软件内公示生效，用户继续使用服务视为接受新版协议。</li>
 </ol>
-<div class="note‑box">
-查看完整的 <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple 标准最终用户许可协议 (EULA)</a>
+<div class="note-box">
+查看完整的 <a href="${APPLE_EULA}" target="_blank">Apple 标准最终用户许可协议 (EULA)</a>
 </div>
 `
-},
-"zh‑Hant":{
+};
+I18N["zh-TW"] = {
+  langName:"繁體中文",
   title:"訂閱服務協議",
-  effective:"生效日期：2026年09月23日",
-  content:`
-<p>適用場景：Apple App Store 內購、一次性購買、自動續約訂閱、免費試用</p>
+  effectiveDate:"生效日期：2026年09月23日",
+  linkPrivacy:"隱私權政策",
+  linkTerms:"使用者使用條款",
+  linkSubscription:"訂閱服務協議",
+  html:`
+<p>適用場景：Apple App Store 內購、一次性購買、自動續約訂閱、免費試用。</p>
 <p>本《訂閱與內購服務協議》（以下簡稱「本協議」）為軟體開發者（我方）與終端使用者就本工具軟體在 Apple App Store 平台之所有付費購買、一次性解鎖、免費試用、自動續約訂閱所訂立之法律協議。</p>
-<p>本協議為<a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple官方《App Store 最終使用者許可協議(EULA)》</a>補充條款。所有付款、帳單、扣款、退款、訂閱管理皆受 Apple 平台規則管轄。您於 App Store 進行購買、訂閱、試用即代表已閱讀並同意本協議與 Apple 服務條款。</p>
+<p>本協議為<a href="${APPLE_EULA}" target="_blank">Apple官方《App Store 最終使用者許可協議(EULA)》</a>補充條款。所有付款、帳單、扣款、退款、訂閱管理皆受 Apple 平台規則管轄。您於 App Store 進行購買、訂閱、試用即代表已閱讀並同意本協議與 Apple 服務條款。同時請閱讀<a href="${URL_TERMS}" target="_blank">使用者使用條款</a>與<a href="${URL_PRIVACY}" target="_blank">隱私權政策</a>。</p>
 <h2>一、服務與權益說明</h2>
 <ol>
 <li>本軟體為本機工具應用，無雲端資料儲存。所有內購與訂閱皆為虛擬數位權益，用於解鎖進階工具功能，不含實體商品或實體服務。</li>
@@ -203,21 +229,25 @@ const i18n = {
 </ol>
 <h2>六、協議優先順序與修訂</h2>
 <ol>
-<li>本協議若與 <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple EULA</a> 衝突，以 Apple 官方條款為準。</li>
+<li>本協議若與 <a href="${APPLE_EULA}" target="_blank">Apple EULA</a> 衝突，以 Apple 官方條款為準。</li>
 <li>我方得依法律與 Apple 合規要求更新協議，更新後公佈即生效，繼續使用視為接受新版本。</li>
 </ol>
-<div class="note‑box">
-查看完整的 <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple 最終使用者許可協議(EULA)</a>
+<div class="note-box">
+查看完整的 <a href="${APPLE_EULA}" target="_blank">Apple 最終使用者許可協議(EULA)</a>
 </div>
 `
-},
-"en‑US":{
+};
+I18N["en"] = {
+  langName:"English",
   title:"Subscription Agreement",
-  effective:"Effective Date: September 23, 2026",
-  content:`
+  effectiveDate:"Effective Date: September 23, 2026",
+  linkPrivacy:"Privacy Policy",
+  linkTerms:"Terms of Service",
+  linkSubscription:"Subscription Agreement",
+  html:`
 <p>Applicable scenarios: App Store In‑App Purchases, one‑time purchases, auto‑renewable subscriptions, free trials.</p>
 <p>This Subscription & In‑App Purchase Agreement (the “Agreement”) is a legal contract between the software developer (“us/developer”) and you (end‑user) governing all paid purchases, one‑time unlocks, free trials and auto‑renewable subscriptions for this utility app on Apple App Store.</p>
-<p>This Agreement supplements the <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple Standard EULA</a>. All payments, billing, charges, refunds and subscription management are governed by Apple’s terms. By purchasing, subscribing or trialing in‑app items on App Store, you acknowledge reading and accepting this Agreement and Apple’s official terms.</p>
+<p>This Agreement supplements the <a href="${APPLE_EULA}" target="_blank">Apple Standard EULA</a>. All payments, billing, charges, refunds and subscription management are governed by Apple’s terms. By purchasing, subscribing or trialing in‑app items on App Store, you acknowledge reading and accepting this Agreement and Apple’s official terms. Please also read <a href="${URL_TERMS}" target="_blank">Terms of Service</a> and <a href="${URL_PRIVACY}" target="_blank">Privacy Policy</a>.</p>
 <h2>1. Services & Benefits</h2>
 <ol>
 <li>This is a local‑first utility without cloud data storage. All IAP and subscriptions grant virtual digital benefits to unlock premium tools. No physical goods or physical services are included.</li>
@@ -250,21 +280,25 @@ const i18n = {
 </ol>
 <h2>6. Agreement Priority & Revisions</h2>
 <ol>
-<li>If any term conflicts with <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple EULA</a>, Apple’s official terms prevail.</li>
+<li>If any term conflicts with <a href="${APPLE_EULA}" target="_blank">Apple EULA</a>, Apple’s official terms prevail.</li>
 <li>We may revise this Agreement for legal or App Store compliance. Revised version takes effect upon publication. Continued use means acceptance of updated terms.</li>
 </ol>
-<div class="note‑box">
-Read full <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple Standard End‑User License Agreement (EULA)</a>
+<div class="note-box">
+Read full <a href="${APPLE_EULA}" target="_blank">Apple Standard End‑User License Agreement (EULA)</a>
 </div>
 `
-},
-"ja":{
+};
+I18N["ja"] = {
+  langName:"日本語",
   title:"サブスクリプション利用規約",
-  effective:"発効日：2026年09月23日",
-  content:`
+  effectiveDate:"発効日：2026年09月23日",
+  linkPrivacy:"プライバシーポリシー",
+  linkTerms:"利用規約",
+  linkSubscription:"サブスクリプション利用規約",
+  html:`
 <p>適用範囲：App Storeアプリ内課金、一括購入、自動更新サブスクリプション、無料トライアル</p>
 <p>本サブスクリプション・アプリ内課金規約は、開発者とエンドユーザーの間で締結される法的な契約であり、Apple App Store上での本アプリの購入、一括アンロック、無料トライアル、自動更新サブスクリプションに適用されます。</p>
-<p>本規約は<a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple標準EULA</a>の補足条項です。お支払い、請求、返金、サブスク管理はAppleのルールに従います。App Storeで購入・契約することで本規約とAppleの規約に同意したものとみなされます。</p>
+<p>本規約は<a href="${APPLE_EULA}" target="_blank">Apple標準EULA</a>の補足条項です。お支払い、請求、返金、サブスク管理はAppleのルールに従います。App Storeで購入・契約することで本規約とAppleの規約に同意したものとみなされます。また<a href="${URL_TERMS}" target="_blank">利用規約</a>、<a href="${URL_PRIVACY}" target="_blank">プライバシーポリシー</a>もご確認ください。</p>
 <h2>1.サービスと権利</h2>
 <ol>
 <li>本アプリはローカル実行型ツールでクラウドにデータを保存しません。アプリ内課金・サブスクはプレミアム機能を解除する仮想的な権利であり、実物商品は含まれません。</li>
@@ -297,21 +331,25 @@ Read full <a href="https://www.apple.com/legal/internet‑services/itunes/dev/st
 </ol>
 <h2>6.規約の優先順位と改定</h2>
 <ol>
-<li>本規約と<a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple EULA</a>に矛盾がある場合はAppleの規約が優先されます。</li>
+<li>本規約と<a href="${APPLE_EULA}" target="_blank">Apple EULA</a>に矛盾がある場合はAppleの規約が優先されます。</li>
 <li>法令またはApp Storeコンプライアンスのため規約を改定することがあり、公開時点で効力を生じ、継続利用は改定版に同意したものとみなされます。</li>
 </ol>
-<div class="note‑box">
-<a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple標準エンドユーザーライセンス契約(EULA)</a>を確認する
+<div class="note-box">
+<a href="${APPLE_EULA}" target="_blank">Apple標準エンドユーザーライセンス契約(EULA)</a>を確認する
 </div>
 `
-},
-"ko":{
+};
+I18N["ko"] = {
+  langName:"한국어",
   title:"구독 서비스 약관",
-  effective:"시행일: 2026년 09월 23일",
-  content:`
+  effectiveDate:"시행일: 2026년 09월 23일",
+  linkPrivacy:"개인정보 처리방침",
+  linkTerms:"서비스 약관",
+  linkSubscription:"구독 서비스 약관",
+  html:`
 <p>적용 범위: App Store 인앱 구매, 일회성 구매, 자동 갱신 구독, 무료 체험</p>
 <p>본 구독 및 인앱 구매 약관은 개발자와 최종 사용자 간의 법적 계약으로 Apple App Store에서의 앱 내 모든 유료 구매, 일회성 잠금 해제, 무료 체험, 자동 갱신 구독에 적용됩니다.</p>
-<p>본 약관은 <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple 표준 최종 사용자 라이선스 계약(EULA)</a>의 보충 조항입니다. 결제, 청구, 환불, 구독 관리는 Apple 규칙에 따릅니다. App Store에서 구매·구독하는 행위는 본 약관 및 Apple 약관에 동의함을 의미합니다.</p>
+<p>본 약관은 <a href="${APPLE_EULA}" target="_blank">Apple 표준 최종 사용자 라이선스 계약(EULA)</a>의 보충 조항입니다. 결제, 청구, 환불, 구독 관리는 Apple 규칙에 따릅니다. App Store에서 구매·구독하는 행위는 본 약관 및 Apple 약관에 동의함을 의미합니다. 또한 <a href="${URL_TERMS}" target="_blank">서비스 약관</a>, <a href="${URL_PRIVACY}" target="_blank">개인정보 처리방침</a>을 참고하십시오.</p>
 <h2>1. 서비스 및 권리 안내</h2>
 <ol>
 <li>본 앱은 로컬 기반 유틸리티로 클라우드 데이터 저장 기능이 없습니다. 인앱 구매와 구독은 프리미엄 기능을 해제하는 가상 디지털 권리이며 실물 상품을 포함하지 않습니다.</li>
@@ -322,14 +360,14 @@ Read full <a href="https://www.apple.com/legal/internet‑services/itunes/dev/st
 <ol>
 <li>모든 인앱 결제는 Apple App Store를 통해 처리되며 영수증, 거래 기록, 구독 정보는 Apple이 관리합니다.</li>
 <li>무료 체험 또는 자동 갱신 구독을 선택하면 체험 종료 혹은 구독 주기 종료 시 Apple이 자동으로 요금을 청구합니다.</li>
-<li>iPhone / iPad 설정 → Apple ID → 구독에서 언제든 자동 갱신을 끄거나 구독을 취소할 수 있습니다. 취소 후 현재 주기의 권리는 만료까지 유지됩니다.</li>
+<li>iPhone / iPad 설정 → Apple ID → 구독에서 언제든 자동 갱신을 끄거나 구독을 취소할 수 있습니다. 취소 후도 현재 주기 권리는 만료까지 유지됩니다.</li>
 <li>개발자는 사용자의 구독 상태를 수정하거나 취소할 수 없으며 관리 권한은 사용자와 Apple에 있습니다.</li>
 </ol>
 <h2>3. 환불 규정</h2>
 <ol>
 <li>환불 처리는 Apple에서만 진행하며 개발자는 환불 권한이 없습니다.</li>
 <li>환불 또는 청구 이의 제기는 Apple 지원 또는 App Store 주문 분쟁 채널을 통해 신청하십시오.</li>
-<li>가상 디지털 서비스는 활성화 후 Apple 규칙상 무조건 환불이 지원되지 않으며 최종 결정은 Apple에 있습니다.</li>
+<li>가상 디지털 서비스는 활성화 후 Apple 규칙상 무조건 환불이 지원되지 않으며 최종 결정은 Apple이 합니다.</li>
 </ol>
 <h2>4. 권리 활성화 및 만료</h2>
 <ol>
@@ -340,25 +378,29 @@ Read full <a href="https://www.apple.com/legal/internet‑services/itunes/dev/st
 <h2>5. 사용자 준수 사항</h2>
 <ol>
 <li>Apple 인증 메커니즘을 우회·변조하거나 App Store 외 경로로 유료 기능을 해제하는 행위를 금지합니다.</li>
-<li>대량 라이선싱, 재판매, 공유, 리버스 엔지니어링은 금지하며 위반 시 보상 없이 유료 권리가 영구 상실됩니다.</li>
+<li>대량 라이선싱, 재판매, 공유, 리버스 엔지니어링은 금지. 위반 시 보상 없이 유료 권리가 영구 상실됩니다.</li>
 </ol>
 <h2>6. 약관 우선순위 및 개정</h2>
 <ol>
-<li>본 약관이 <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple EULA</a>와 충돌할 경우 Apple 공식 조항이 우선합니다.</li>
+<li>본 약관이 <a href="${APPLE_EULA}" target="_blank">Apple EULA</a>와 충돌할 경우 Apple 공식 조항이 우선합니다.</li>
 <li>법률 및 App Store 규정에 따라 약관을 개정할 수 있으며 공개 시점부터 효력이 발생하고 계속 사용은 개정 약관 동의로 간주합니다.</li>
 </ol>
-<div class="note‑box">
-<a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple 표준 최종 사용자 라이선스 계약(EULA)</a> 확인
+<div class="note-box">
+<a href="${APPLE_EULA}" target="_blank">Apple 표준 최종 사용자 라이선스 계약(EULA)</a> 확인
 </div>
 `
-},
-"de‑DE":{
+};
+I18N["de-DE"] = {
+  langName:"Deutsch",
   title:"Abonnement‑Vereinbarung",
-  effective:"Gültig ab: 23. September 2026",
-  content:`
+  effectiveDate:"Gültig ab: 23. September 2026",
+  linkPrivacy:"Datenschutz",
+  linkTerms:"Nutzungsbedingungen",
+  linkSubscription:"Abonnement‑Vereinbarung",
+  html:`
 <p>Anwendungsfälle: App Store In‑App‑Käufe, Einmal‑Käufe, automatisch verlängerbare Abonnements, kostenlose Testphasen.</p>
 <p>Diese Abonnement‑ und In‑App‑Kauf‑Vereinbarung stellt einen rechtskräftigen Vertrag zwischen dem Entwickler („wir“) und Ihnen als Endnutzer dar für alle entgeltlichen Käufe, Einmal‑Freischaltungen, Testphasen und automatisch verlängerbaren Abonnements dieser Anwendung im Apple App Store.</p>
-<p>Diese Vereinbarung ergänzt die <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple Standard‑EULA</a>. Zahlungen, Rechnungen, Belastungen, Rückerstattungen und Abonnementverwaltung unterliegen den Apple‑Bedingungen. Mit Kauf, Abonnement oder Test im App Store akzeptieren Sie diese Vereinbarung sowie Apples Nutzungsbedingungen.</p>
+<p>Diese Vereinbarung ergänzt die <a href="${APPLE_EULA}" target="_blank">Apple Standard‑EULA</a>. Zahlungen, Rechnungen, Belastungen, Rückerstattungen und Abonnementverwaltung unterliegen den Apple‑Bedingungen. Mit Kauf, Abonnement oder Test im App Store akzeptieren Sie diese Vereinbarung sowie Apples Nutzungsbedingungen. Lesen Sie auch <a href="${URL_TERMS}" target="_blank">Nutzungsbedingungen</a> und <a href="${URL_PRIVACY}" target="_blank">Datenschutzerklärung</a>.</p>
 <h2>1. Leistungen und Rechte</h2>
 <ol>
 <li>Dies ist eine lokal ausgeführte Anwendung ohne Cloud‑Datenspeicherung. Alle In‑App‑Käufe und Abonnements gewähren virtuelle digitale Rechte zur Freischaltung von Premium‑Funktionen. Keine physischen Waren oder Dienstleistungen sind enthalten.</li>
@@ -391,21 +433,25 @@ Read full <a href="https://www.apple.com/legal/internet‑services/itunes/dev/st
 </ol>
 <h2>6. Vorrang und Überarbeitung der Vereinbarung</h2>
 <ol>
-<li>Bei Widersprüchen zur <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple‑EULA</a> gelten die offiziellen Apple‑Bedingungen.</li>
+<li>Bei Widersprüchen zur <a href="${APPLE_EULA}" target="_blank">Apple‑EULA</a> gelten die offiziellen Apple‑Bedingungen.</li>
 <li>Wir können diese Vereinbarung aus rechtlichen oder App‑Store‑Gründen überarbeiten. Die überarbeitete Fassung tritt mit Veröffentlichung in Kraft. Fortgesetzte Nutzung gilt als Akzeptanz.</li>
 </ol>
-<div class="note‑box">
-Vollständige <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Apple Standard‑Endbenutzer‑Lizenzvereinbarung (EULA)</a> ansehen
+<div class="note-box">
+Vollständige <a href="${APPLE_EULA}" target="_blank">Apple Standard‑Endbenutzer‑Lizenzvereinbarung (EULA)</a> ansehen
 </div>
 `
-},
-"fr‑FR":{
+};
+I18N["fr-FR"] = {
+  langName:"Français",
   title:"Contrat d’abonnement",
-  effective:"Date d’entrée en vigueur : 23 septembre 2026",
-  content:`
+  effectiveDate:"Date d’entrée en vigueur : 23 septembre 2026",
+  linkPrivacy:"Confidentialité",
+  linkTerms:"Conditions d'utilisation",
+  linkSubscription:"Contrat d’abonnement",
+  html:`
 <p>Scénarios applicables : achats intégrés App Store, achats uniques, abonnements à renouvellement automatique, essais gratuits.</p>
 <p>Ce Contrat d’abonnement et d’achats intégrés est un accord juridique entre le développeur (« nous ») et vous‑même (utilisateur final) régissant tous achats payants, déblocages uniques, essais gratuits et abonnements à renouvellement automatique de cette application utilitaire sur l’App Store Apple.</p>
-<p>Ce document complète la <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">EULA standard Apple</a>. Tous paiements, facturations, remboursements et gestion des abonnements sont régis par les conditions Apple. En achetant, souscrivant ou testant des éléments dans l’app, vous reconnaissez avoir lu et accepté ce contrat ainsi que les conditions officielles d’Apple.</p>
+<p>Ce document complète la <a href="${APPLE_EULA}" target="_blank">EULA standard Apple</a>. Tous paiements, facturations, remboursements et gestion des abonnements sont régis par les conditions Apple. En achetant, souscrivant ou testant des éléments dans l’app, vous reconnaissez avoir lu et accepté ce contrat ainsi que les conditions officielles d’Apple. Veuillez également consulter <a href="${URL_TERMS}" target="_blank">Conditions d'utilisation</a> et <a href="${URL_PRIVACY}" target="_blank">Politique de confidentialité</a>.</p>
 <h2>1. Services et avantages</h2>
 <ol>
 <li>Il s’agit d’une application locale sans stockage cloud. Les achats intégrés et abonnements offrent des avantages numériques virtuels pour débloquer des outils premium. Aucun bien physique ni service physique n’est inclus.</li>
@@ -438,64 +484,64 @@ Vollständige <a href="https://www.apple.com/legal/internet‑services/itunes/de
 </ol>
 <h2>6. Priorité et révisions du contrat</h2>
 <ol>
-<li>En cas de conflit avec la <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">EULA Apple</a>, les conditions officielles d’Apple prévalent.</li>
+<li>En cas de conflit avec la <a href="${APPLE_EULA}" target="_blank">EULA Apple</a>, les conditions officielles d’Apple prévalent.</li>
 <li>Nous pouvons réviser ce contrat pour des raisons juridiques ou de conformité App Store. La version révisée prend effet à sa publication. L’usage continu vaut acceptation des nouvelles conditions.</li>
 </ol>
-<div class="note‑box">
-Consulter l’intégralité de la <a href="https://www.apple.com/legal/internet‑services/itunes/dev/stdeula/" target="_blank">Licence utilisateur final standard Apple (EULA)</a>
+<div class="note-box">
+Consulter l’intégralité de la <a href="${APPLE_EULA}" target="_blank">Licence utilisateur final standard Apple (EULA)</a>
 </div>
 `
-}
 };
 
-const langList = [
-  {code:"zh‑Hans",label:"简体中文"},
-  {code:"zh‑Hant",label:"繁體中文"},
-  {code:"en‑US",label:"English"},
-  {code:"ja",label:"日本語"},
-  {code:"ko",label:"한국어"},
-  {code:"de‑DE",label:"Deutsch"},
-  {code:"fr‑FR",label:"Français"}
-];
-
+const LANGS = ["zh-CN","zh-TW","en","ja","ko","de-DE","fr-FR"];
+let currentLang = "zh-CN";
 const selectEl = document.getElementById("langSelect");
-const pageEl = document.getElementById("pageContent");
+const contentBody = document.getElementById("contentBody");
 
-langList.forEach(l=>{
+LANGS.forEach(l=>{
   const opt = document.createElement("option");
-  opt.value = l.code;
-  opt.textContent = l.label;
+  opt.value = l;
+  opt.textContent = I18N[l].langName;
   selectEl.appendChild(opt);
 });
 
-selectEl.onchange = function(){
-  setLang(this.value);
+selectEl.onchange = ()=>{
+  setLang(selectEl.value);
 };
 
-function setLang(code){
-  const t = i18n[code] ?? i18n["en‑US"];
+function setLang(langKey){
+  currentLang = langKey;
+  const t = I18N[langKey] ?? I18N["en"];
   document.title = t.title + " | LumoConvert";
-  document.documentElement.lang = code;
-  selectEl.value = code;
-  pageEl.innerHTML = `<h1>${t.title}</h1><div class="effective‑date">${t.effective}</div>${t.content}`;
-  localStorage.setItem("sub_lang",code);
+  document.documentElement.lang = langKey;
+  selectEl.value = langKey;
+
+  document.querySelector("[data-i18n='title']").textContent = t.title;
+  document.querySelector("[data-i18n='effectiveDate']").textContent = t.effectiveDate;
+  document.querySelector("[data-i18n='linkPrivacy']").textContent = t.linkPrivacy;
+  document.querySelector("[data-i18n='linkTerms']").textContent = t.linkTerms;
+  document.querySelector("[data-i18n='linkSubscription']").textContent = t.linkSubscription;
+
+  contentBody.innerHTML = t.html;
+  localStorage.setItem("sub_lang", langKey);
 }
 
-(function(){
-  const saved = localStorage.getItem("sub_lang");
-  let match = "en‑US";
-  if(saved && i18n[saved]){
-    match = saved;
-  }else{
-    const brLang = navigator.language || navigator.userLanguage;
-    if(brLang.startsWith("zh‑CN")) match="zh‑Hans";
-    else if(brLang.startsWith("zh‑TW")||brLang.startsWith("zh‑HK")) match="zh‑Hant";
-    else if(brLang.startsWith("ja")) match="ja";
-    else if(brLang.startsWith("ko")) match="ko";
-    else if(brLang.startsWith("de")) match="de‑DE";
-    else if(brLang.startsWith("fr")) match="fr‑FR";
+function detectLang(){
+  const nav = (navigator.language || "en").toLowerCase();
+  if(nav.startsWith("zh")){
+    if(nav.includes("tw") || nav.includes("hk")) return "zh-TW";
+    return "zh-CN";
   }
-  setLang(match);
+  for(const l of LANGS){
+    if(nav.startsWith(l.toLowerCase())) return l;
+  }
+  return "en";
+}
+
+(function init(){
+  const saved = localStorage.getItem("sub_lang");
+  const initLang = (saved && I18N[saved]) ? saved : detectLang();
+  setLang(initLang);
 })();
 </script>
 </body>
